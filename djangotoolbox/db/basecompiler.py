@@ -6,7 +6,11 @@ from django.db.models.fields import NOT_PROVIDED
 from django.db.models.query import QuerySet
 from django.db.models.sql import aggregates as sqlaggregates
 from django.db.models.sql.compiler import SQLCompiler
-from django.db.models.sql.constants import LOOKUP_SEP, MULTI, SINGLE
+#from django.db.models.sql.constants import LOOKUP_SEP, MULTI, SINGLE
+#Django 1.5.4 
+from django.db.models.constants import LOOKUP_SEP, MULTI, SINGLE 
+from django.db.models.sql.constants import QUERY_TERMS 
+
 from django.db.models.sql.where import AND, OR
 from django.db.utils import DatabaseError, IntegrityError
 from django.utils.tree import Node
